@@ -8,12 +8,14 @@ public class Log4jConfiguration {
 
 	private static final Logger log=LogManager.getLogger(Log4jConfiguration.class.getName());
 	public static void configure()
-	{
-			log.warn("hi siva");
-			log.debug("hi dude");
+	{//System.setProperty("", value)
+			
+			
 	}
 	public static void main(String[] args) {
-		configure();
+		//configure();
+		new CSVFileRead().readCSVToMap();
+		
 	}
 }
 
