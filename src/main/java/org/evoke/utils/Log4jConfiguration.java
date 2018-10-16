@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 
 public class Log4jConfiguration {
 
-	private static final Logger log=LogManager.getLogger(Log4jConfiguration.class.getName());
+	//private static final Logger log=LogManager.getLogger(Log4jConfiguration.class.getName());
 	public static void configure()
 	{//System.setProperty("", value)
 			
@@ -14,7 +14,7 @@ public class Log4jConfiguration {
 	}
 	public static void main(String[] args) {
 		//configure();
-		new CSVFileRead().readCSVToMap();
+		new CSVFileRead().readCSVToMap("test");
 		
 	}
 }
